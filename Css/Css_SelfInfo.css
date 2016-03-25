@@ -1,0 +1,623 @@
+﻿body {
+}
+
+.i-content {
+    padding-bottom: 20px;
+}
+
+    .i-content .i-content-inf {
+        margin: 30px auto;
+        width: 90%;
+        height: 200px;
+        padding: 15px;
+        border: 1px solid #dbdbdb;
+        background-color: #fff;
+        /*background-color:#5BC0DE;
+        background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+        background-image: -o-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+        background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+        background-size: 40px 40px;*/
+    }
+
+        .i-content .i-content-inf .inf-l {
+            float: left;
+            width: 60%;
+            height: 100%;
+        }
+
+        .i-content .i-content-inf .inf-r {
+            float: right;
+            height: 100%;
+            width: 38%;
+            border-left: 1px groove #e2e8ed;
+        }
+
+        .i-content .i-content-inf .tit {
+            margin: 20px 0 0 20px;
+            color: #666666;
+            font-size: 15px;
+        }
+
+.uforum {
+    overflow-y: scroll;
+    margin-top: 10px;
+    height: 75%;
+}
+
+
+
+    .uforum a {
+        margin: 2px 40px;
+        width: 60%;
+        background-color: #3e454d;
+    }
+
+        .uforum a:hover {
+            background-color: #2483cb;
+        }
+
+.link a {
+    display: block;
+    border-radius: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.p-info {
+    width: 100%;
+    float: left;
+    height: 75%;
+}
+
+    .p-info a {
+        width: 100px;
+        background-color: #00aeef;
+    }
+
+        .p-info a:hover {
+            background-color: #2483cb;
+        }
+
+    .p-info .a-tl {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+    }
+
+    .p-info .a-tr {
+        border-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .p-info .a-bl {
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    .p-info .a-br {
+        border-radius: 0;
+        border-bottom-right-radius: 10px;
+    }
+
+.a-table {
+    border-collapse: collapse;
+    border: none;
+    display: block;
+    float: right;
+    margin: 5% 20px 0px 0;
+}
+/*.a-table tr td {
+        padding:0;
+        margin:0;
+    }*/
+
+.propers {
+    width: 100%;
+    height: 70%;
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+    .propers .bar {
+        background-color: #dbdbdb;
+        width: 100%;
+        height: 25%;
+    }
+
+    .propers .pro {
+        float: left;
+        width: 24.8%;
+        height: 70%;
+        border-left: 1px solid #dbdbdb;
+    }
+
+        .propers .pro::after {
+            content: '.';
+            clear: both;
+            display: none;
+        }
+
+    .propers .pro-last {
+        border-right: 1px solid #dbdbdb;
+    }
+
+    .propers .c1 {
+        border-top: 3px solid #ff0000;
+    }
+
+    .propers .c2 {
+        border-top: 3px solid #399346;
+    }
+
+    .propers .c3 {
+        border-top: 3px solid #2483cb;
+    }
+
+    .propers .c4 {
+        border-top: 3px solid #ff6a00;
+    }
+
+.dhmq {
+    background-image: url(/img/dhmq.png);
+    background-size: 80px;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.dai {
+    background-position: 0px 0;
+}
+
+.shou {
+    background-position: 40px 0;
+}
+
+.zhi {
+    background-position: 40px 40px;
+}
+
+.mai {
+    background-position: 0px 40px;
+}
+
+.chart-ico {
+    display: block;
+    float: right;
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+}
+
+    .chart-ico:hover {
+        background-color: #e6e6e6;
+    }
+
+    .chart-ico div {
+        background-image: url(/img/chart-ico.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        height: 20px;
+        width: 20px;
+        margin-right: 2px;
+    }
+
+.float-big {
+    font-size: 20pt;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.float-small {
+    font-size: 14pt;
+    display: inline;
+}
+
+.list-item, .list-item div {
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+    background-color: #F2F3F5;
+    border: 1px solid #D0D0D0;
+}
+
+.i-forumListHead span {
+    display: inline;
+    line-height: 30px;
+    padding-left: 65px;
+    padding-right: 65px;
+    border-right: 1px solid #dbdbdb;
+}
+
+    .i-forumListHead span:last-child {
+        border-right: none;
+    }
+
+.i-forumListContent span {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: avoid;
+}
+
+    .i-forumListContent span a {
+        color: #000;
+        text-decoration: none;
+    }
+
+        .i-forumListContent span a:hover {
+            color: #0088CC;
+            text-decoration: underline;
+        }
+
+.b-operate-btn {
+    background: none;
+    border: 1px solid #666666;
+    width: 45px;
+    border-radius: 5px;
+    outline-style: none;
+    margin: 5px;
+}
+
+    .b-operate-btn:hover {
+        background: #666666;
+        color: #FFF;
+    }
+
+.editPanel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    display: none;
+    padding: 30px;
+    width: 250px;
+    height: 170px;
+    text-align: center;
+    z-index: 999;
+    box-shadow: #666666 0px 0px 10px;
+    color: #555555;
+}
+
+    .editPanel input:not([type=button]) {
+        display: block;
+        margin: 10px auto;
+        outline-style: none;
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+        box-shadow: #CCCCCC 0 0 3px inset;
+        color: #555555;
+        padding: 5px;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+.f-select {
+    outline-style: none;
+    padding: 5px 30px;
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    color: #555555;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+    .f-select:focus, .editPanel input:not([type=button]):focus {
+        border: 1px solid #66AFE9;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),#66AFE9 0 0 7px;
+    }
+
+
+.i-TradRcdListHead {
+    width: 95% !important;
+    border: none;
+    /*margin-top: 10px !important;*/
+    border-top: 1px solid #D0D0D0 !important;
+    border-bottom: 1px solid #D0D0D0;
+    height: 40px !important;
+    margin: 10px auto 0 auto !important;
+}
+
+    .i-TradRcdListHead span {
+        line-height: 40px !important;
+        display: inline !important;
+    }
+
+    .i-TradRcdListHead a {
+        display: inline !important;
+        color: #0088CC !important;
+        cursor: pointer;
+    }
+
+        .i-TradRcdListHead a:hover {
+            text-decoration: underline;
+        }
+
+    .i-TradRcdListHead span:first-child {
+        margin-left: 30px !important;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .i-TradRcdListHead span:not(:first-child) {
+        padding: 0 10px;
+        margin-left: -6px !important;
+        border-right: 1px solid #C0B2C0;
+    }
+
+    .i-TradRcdListHead span:last-child {
+        border-right: none;
+    }
+
+.i-TradRcdList div {
+    height: 50px;
+    width: 95%;
+    border-bottom: 1px solid #D0D0D0;
+    border-top: none;
+    margin: 0 auto;
+    position: relative;
+}
+
+    .i-TradRcdList div span:first-child {
+        line-height: 50px;
+        margin-left: 20px;
+    }
+
+    .i-TradRcdList div span {
+        display: inline-block;
+        line-height: 50px;
+        margin-left: 30px;
+        width: 70px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+        .i-TradRcdList div span a {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #000;
+            text-decoration: none;
+            display: inline;
+        }
+
+            .i-TradRcdList div span a:hover {
+                color: #0088CC;
+                text-decoration: underline;
+            }
+
+        .i-TradRcdList div span.num {
+            width: 40px !important;
+            font-weight: bold;
+        }
+
+        .i-TradRcdList div span.forumName {
+            width: 100px !important;
+        }
+
+        .i-TradRcdList div span:last-child {
+            line-height: 50px;
+            margin-left: 60px;
+        }
+
+    .i-TradRcdList div.operate {
+        position: relative;
+        /*top:-20px;*/
+        display: inline-block;
+        width: 70px;
+        margin-left: 30px;
+        border: none;
+        /*height:30px;*/
+    }
+
+        .i-TradRcdList div.operate div {
+            position: absolute;
+            top: 15px;
+            left: 2px;
+            height: auto;
+            width: 40px;
+            background-color: #FFF;
+            border-radius: 3px;
+            box-shadow: #666666 0 0 5px;
+            border: none;
+            color: #0088CC;
+            display: none;
+            overflow: hidden;
+            z-index: 100;
+        }
+
+            .i-TradRcdList div.operate div ul {
+                margin: 0;
+                padding-left: 0px;
+            }
+
+                .i-TradRcdList div.operate div ul li {
+                    list-style: none;
+                    padding: 5px 7px;
+                    display: block;
+                    width: 26px;
+                    /*margin-left: -40px;*/
+                    text-align: center;
+                    cursor: pointer;
+                    margin: 0;
+                }
+
+                    .i-TradRcdList div.operate div ul li:hover {
+                        background-color: #F99639;
+                        color: #fff;
+                    }
+
+        .i-TradRcdList div.operate .operate-btn {
+            display: inline-block;
+            margin: 0;
+        }
+
+            .i-TradRcdList div.operate .operate-btn span {
+                display: inline;
+                margin: 0;
+                margin-left: 10px;
+            }
+
+.i-title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #4D4D4D;
+    margin: 15px 20px 10px 20px;
+}
+
+.i-table-div {
+    width: 95%;
+    margin: 20px auto;
+    border: 1px solid #EEEEEE;
+}
+
+    .i-table-div table {
+        border-collapse: collapse;
+    }
+
+        .i-table-div table tr {
+            height: 45px;
+        }
+
+            .i-table-div table tr.double {
+                background-color: #FAFAFA;
+            }
+
+            .i-table-div table tr:hover {
+                background-color: #F1F7FB;
+            }
+
+            .i-table-div table tr td {
+                padding: 0 10px;
+            }
+
+                .i-table-div table tr td:first-child {
+                    font-weight: bold;
+                }
+
+#msgContainer > div {
+    padding: 10px 20px;
+    border-top: 1px solid #E1E1E1;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+    #msgContainer > div:last-child {
+        border-bottom: 1px solid #E1E1E1;
+    }
+
+#msgContainer div div {
+    display: inline-block;
+    line-height: 25px;
+    overflow: hidden;
+    text-wrap: normal;
+    word-break: break-all;
+    vertical-align: top;
+}
+
+    #msgContainer div div:first-child {
+        width: 20%;
+        font-weight: bold;
+    }
+
+    #msgContainer div div:last-child {
+        width: 75%;
+    }
+
+.tb-self-info {
+    width: 300px;
+    margin: 20px 0 0 30px;
+    height: 100px;
+    font-size: 10pt;
+}
+
+    .tb-self-info td:first-child {
+        width: 80px;
+        padding: 0;
+    }
+
+    .tb-self-info td:last-child {
+        width: 40px;
+        padding: 0;
+    }
+
+#forumList, #trading-record-list {
+    height: auto;
+    width: auto;
+    background: initial;
+    border: none;
+}
+
+.forum-add {
+    display: block;
+    width: 95%;
+    background-color: #FFF;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #e1e1e1;
+}
+
+.forum-add-ico {
+    display: block;
+    background-image: url(/img/add-btn.png);
+    background-position: 0 0;
+    background-size: 60px;
+    height: 30px !important;
+    width: 30px !important;
+    margin: 5px auto !important;
+    border: none !important;
+}
+
+.forum-add:hover {
+    background-color: #e0e0e0;
+    border: 1px solid #FFF;
+}
+
+    .forum-add:hover .forum-add-ico {
+        background-position: 30px 0;
+    }
+
+.succ-ico, .wait-ico {
+    background-image: url(/img/succ-wait.png);
+    background-size: 200px;
+}
+
+.succ-ico {
+    background-position: 0 0;
+    height: 100px;
+    width: 100px;
+}
+
+.wait-ico {
+    background-position: 100px 0;
+    height: 100px;
+    width: 100px;
+}
+
+p.trading-excredits, p.trading-incredits {
+    font-weight: bold;
+}
+
+p.trading-excredits {
+    color: #F37857;
+}
+
+p.trading-incredits {
+    color: #53A000;
+}
+
+.chart div {
+    width: auto;
+}

@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SubPage.master.cs" Inherits="SubPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Css/Css_Ordinary.css" rel="stylesheet" />
+    <link href="Css/Css_SubMaster.css" rel="stylesheet" />
+    <script src="Js/jquery-1.10.2.min.js"></script>
+<%--    <script>
+        $(window).resize(function () {
+            var box1 = $("#sub_content");
+            var box2 = $("#sub_content>div");
+            var box3 = $("#sub_content>div>div");
+            var box4 = $("#sub_content>div>div>div");
+            
+            box2.outerWidth(box1.innerWidth());
+            box3.outerWidth(box2.innerWidth());
+            box4.outerWidth(box3.innerWidth());
+            console.log(box1.innerWidth());
+            console.log(box2.outerWidth());
+            console.log(box3.innerWidth());
+            console.log(box4.outerWidth());
+        });
+    </script>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form" runat="server">
+        <div id="sub-title">
+            <img src="img/sub_page_titlebg.png" />
+        </div>
+
+        <div id="sub_content">
+            <div>
+                <div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

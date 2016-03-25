@@ -1,0 +1,350 @@
+﻿@charset "utf-8";
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
+}
+
+input, select, textarea {
+    font-size: 100%;
+}
+
+a:link {
+    color: #08c;
+}
+
+a:hover {
+    color: #08c;
+    text-decoration: underline;
+}
+
+ins, a {
+    text-decoration: none;
+}
+
+
+
+
+.login {
+    width: 220px;
+    padding: 0 31px 0 33px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #a7a7a7;
+}
+
+    .login a {
+        color: #08c;
+    }
+
+.login-modern {
+    border: 1px solid transparent;
+    background: rgba(0,0,0,.4);
+    _background: 0;
+    _border: 0;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#66000000', EndColorStr='#66000000');
+}
+
+
+
+
+.ui-form-title {
+    font: 18px/28px tahoma,arial,"Hiragino Sans GB","Microsoft Yahei",\5b8b\4f53;
+    padding: 26px 0 16px;
+    width: 100%;
+    color: #4d4d4d;
+}
+
+.login-modern .ui-form-title {
+    color: #fff;
+}
+
+.login-sso .ui-form-title {
+    text-align: center;
+}
+
+.ui-form-item:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.ui-form-item {
+    padding: 0 0 10px;
+    zoom: 1;
+    position: relative;
+}
+
+.ui-form-item-20pd {
+    padding-bottom: 18px;
+}
+
+.ui-form-item-30pd {
+    padding-bottom: 28px;
+}
+
+.ui-form-item input {
+    vertical-align: middle;
+}
+
+.ui-form-other {
+    position: relative;
+    line-height: 18px;
+    padding-top: 7px;
+    height: 18px;
+    zoom: 1;
+    _width: 100%;
+    _overflow: hidden;
+}
+
+.ui-form-other-fg {
+    padding-top: 4px;
+}
+
+.ui-form-other .textlink-ml20 {
+    margin-left: 20px;
+}
+
+.ui-form-other .forgot {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.ui-form-other .register {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    font-size: 12px;
+    color: #ff9800;
+    font-weight: 700;
+}
+
+.ui-form-explain {
+    display: none;
+    height: 0;
+    overflow: hidden;
+}
+
+.ui-form-text {
+    position: relative;
+    line-height: 18px;
+    height: 18px;
+    font-size: 14px;
+    padding-bottom: 10px;
+    color: #4d4d4d;
+    zoom: 1;
+}
+
+.login-modern .ui-form-text {
+    color: #fff;
+    zoom: 1;
+}
+
+
+
+.login .ui-form .object-shim-class {
+    display: inline-block;
+    width: 177px;
+    _width: 175px;
+    height: 38px;
+    border: 1px solid #a7a7a7;
+}
+
+.login-modern .ui-form-item .object-shim-class {
+    display: inline-block;
+    border: 0;
+    border: 1px solid #fff;
+}
+
+.ui-form .object-shim-class .ui-input {
+    _width: 155px;
+}
+
+.ui-label {
+    width: 39px;
+    height: 38px;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+
+.login .ui-label {
+    border-top: 1px solid #a7a7a7;
+    border-bottom: 1px solid #a7a7a7;
+    border-left: 1px solid #a7a7a7;
+}
+
+    .login .ui-label:hover {
+        border-top: 1px solid #6d6d6d;
+        border-bottom: 1px solid #6d6d6d;
+        border-left: 1px solid #6d6d6d;
+    }
+
+.ui-label .ui-icon {
+    width: 39px;
+    height: 38px;
+    display: block;
+    text-indent: -9999em;
+    overflow: hidden;
+    background-color: #aaabab;
+    background-image: url(/img/tttyuuu.png);
+    _background-image: url(/img/tttyuuu.png);
+    background-repeat: no-repeat;
+}
+
+.ui-label:hover .ui-icon, .ui-label-hover .ui-icon {
+    cursor: pointer;
+    background-color: #6d6d6d;
+}
+
+.ui-icon-userDEF {
+    background-position: -2px 5px;
+}
+
+.ui-icon-securityON {
+    background-position: -42px 5px;
+}
+
+.ui-icon-securityOFF {
+    background-position: -84px 5px;
+}
+
+.ui-icon-securityERR {
+    background-position: -250px 6px;
+}
+
+.ui-icon-checkcodeT {
+    background-position: -126px 5px;
+}
+
+.ui-icon-checkcodeV {
+    background-position: -167px 5px;
+}
+
+.ui-input {
+    float: left;
+    position: relative;
+    padding: 9px;
+    line-height: 20px;
+    height: 20px;
+    color: #595959;
+    font-size: 12px;
+    vertical-align: middle;
+    *vertical-align: -5px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.login .ui-input {
+    border: 1px solid #a7a7a7;
+}
+
+.login-modern .ui-input {
+    border: 1px solid #fff;
+}
+
+.ui-input-normal, .standardPwdContainer .ui-input, .alieditContainer .ui-input {
+    width: 159px;
+    _width: 157px;
+}
+
+.ui-input-checkcode {
+    width: 69px;
+}
+
+.ui-input:hover, .ui-input-hover {
+}
+
+.ui-input:focus, .ui-input-focus {
+    outline-style: none;
+    color: #595959;
+}
+
+.placeholder {
+    color: #ccc;
+}
+
+.ui-input:-ms-input-placeholder {
+    color: #ccc;
+}
+
+.ui-checkcode {
+    width: 80px;
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.ui-checkcode-img {
+    width: 80px;
+    height: 30px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.ui-button * {
+    margin: 0;
+    padding: 0;
+}
+
+.ui-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 219px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    *zoom: 1;
+    *overflow: visible;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    background-color: #e66e1e;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffa800),to(#e66e1e));
+    background: -moz-linear-gradient(top,#ffa800,#e66e1e);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa800', endColorstr='#e66e1e');
+    background: -o-linear-gradient(top,#FFA600,#FE9200);
+    background: -ms-linear-gradient(top,#ffa800 0,#e66e1e 100%);
+    background: linear-gradient(top,#ffa800,#e66e1e);
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+    .ui-button:focus {
+        outline-style:none;
+    }
+
+a.ui-button {
+    color: #fff;
+    width: 179px;
+}
+
+    .ui-button:hover, a.ui-button:hover {
+        text-decoration: none;
+        background-color: #f48f0d;
+        background: -webkit-gradient(linear,left top,left bottom,from(#ffb400),to(#f48f0d));
+        background: -moz-linear-gradient(top,#ffb400,#f48f0d);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb400', endColorstr='#f48f0d');
+        background: -o-linear-gradient(top,#FFB91C,#FFA700);
+        background: -ms-linear-gradient(top,#ffb400 0,#f48f0d 100%);
+        background: linear-gradient(top,#ffb400,#f48f0d);
+    }
+

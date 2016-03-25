@@ -1,0 +1,254 @@
+﻿.tl-container {
+    width: 1000px;
+    min-width: 500px;
+    height: auto;
+    /*background-color: #EEEEEE;*/
+    text-wrap: normal;
+    overflow: hidden;
+    word-break: break-all;
+    color: #666666;
+    font-size: 9pt;
+    font-family: '微软雅黑';
+    margin: 0 auto;
+}
+
+    .tl-container div {
+        width: auto;
+    }
+
+    .tl-container > div {
+        border: 1px solid #E1E1E1;
+        width: 95%;
+        height: auto;
+        background-color: #fff;
+        margin: 5px auto;
+        margin-top: 40px;
+    }
+
+#tl-trading-header {
+    height: auto;
+    margin: 0 auto;
+}
+
+    #tl-trading-header img {
+        margin: 5px 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        border: 2px solid #E1E1E1;
+        overflow: hidden;
+        margin-top: -30px;
+        box-shadow: #666666 0 -3px 7px;
+    }
+
+    #tl-trading-header span {
+        display: inline;
+    }
+
+        #tl-trading-header span.id {
+            display: inline-block;
+            margin-top: 8px;
+            vertical-align: top;
+            color: #5D7895;
+        }
+
+        #tl-trading-header span.time {
+            float: right;
+            margin: 10px;
+        }
+
+#tl-trading-content {
+    height: auto;
+    margin: 0 auto;
+}
+
+    #tl-trading-content table {
+        width: 100%;
+        padding: 0 100px;
+    }
+
+    #tl-trading-content a {
+        display: inline;
+        text-decoration: none;
+        line-height: 30px;
+        color: inherit;
+    }
+
+        #tl-trading-content a:hover {
+            color: #5388D3;
+            text-decoration: underline;
+        }
+
+    #tl-trading-content span {
+        display: inline;
+        font-weight: bold;
+        font-size: 15pt;
+    }
+
+        #tl-trading-content span.out {
+            color: #F37857;
+        }
+
+        #tl-trading-content span.in {
+            color: #53A000;
+        }
+
+        #tl-trading-content span.flag {
+            display: inline-block;
+            border: 1px solid #dddedb;
+            border-radius: 100px;
+            padding: 8px;
+            cursor: pointer;
+            font-size: 10pt;
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#dddedb');
+            -ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#dddedb')";
+
+            background-image: -moz-linear-gradient(top, #ffffff, #dddedb);
+            background-image: -ms-linear-gradient(top, #ffffff, #dddedb);
+            background-image: -o-linear-gradient(top, #ffffff, #dddedb);
+            background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#dddedb));
+            background-image: -webkit-linear-gradient(top, #ffffff, #dddedb);
+            background-image: linear-gradient(top, #ffffff, #dddedb);
+            user-select:none;
+            -webkit-user-select:none;
+        }
+
+            #tl-trading-content span.flag:hover {
+                box-shadow: #CCCCCC 0 0 5px inset;
+                filter: progid: DXImageTransform.Microsoft.gradient(startColorstr = '#e6e6e6', endColorstr = '#ffffff');
+
+                -ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorstr = '#e6e6e6', endColorstr = '#ffffff')";
+
+                background-image: -moz-linear-gradient(top, #e6e6e6, #ffffff);
+                background-image: -ms-linear-gradient(top, #e6e6e6, #ffffff);
+                background-image: -o-linear-gradient(top, #e6e6e6, #ffffff);
+                background-image: -webkit-gradient(linear, center top, center bottom, from(#e6e6e6), to(#ffffff));
+                background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
+                background-image: linear-gradient(top, #e6e6e6, #ffffff);
+
+            }
+
+#tl-comment {
+    padding: 10px 0;
+    background-color: #FAFAFA;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    display: none;
+    box-shadow: inset 0px 5px 10px -7px #5D7895,inset 0px -5px 10px -7px #5D7895;
+}
+
+
+#tl-comment >div{
+    border-bottom:1px dashed #CCCCCC;
+    margin-bottom:10px;
+}
+
+    #tl-comment > div:last-child {
+        margin-bottom: 10px;
+    }
+
+    #tl-comment img {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        margin-left: 10px;
+        border:1px solid #e6e6e6;
+    }
+
+    #tl-comment span {
+        display: inline-block;
+    }
+
+        #tl-comment span.id {
+            margin-left: 0;
+            vertical-align:top;
+            margin-top:15px;
+            margin-left:5px;
+        }
+
+        #tl-comment span.content {
+            margin: 5px 20px;
+            line-height:20px;
+            text-indent:2em;
+
+        }
+        #tl-comment span.time {
+            margin-top:5px;
+            float:right;
+            margin-right:20px;
+        }
+
+.tl-container .tl-comment-btn {
+    text-align: center;
+    color: #666666;
+    font-size: 10pt;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    transition: background-color ease-in-out .15s,color ease-in-out .15s;
+}
+
+    .tl-container .tl-comment-btn:hover {
+        background-color: #76C7C0;
+        color: #FFF;
+    }
+
+.tl-comment-reply input {
+    outline-style: none;
+    background: none;
+    border: none;
+}
+
+.tl-comment-reply > div {
+    border: none;
+    margin: 5px;
+}
+
+    .tl-comment-reply > div:after {
+        display: block;
+        content: '.';
+        clear: both;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+    }
+
+.tl-comment-reply textarea {
+    margin: 0;
+    height: 15px;
+    width: 84%;
+    resize: none;
+    border: 1px solid #CCCCCC;
+    outline-style: none;
+    overflow: hidden;
+    box-shadow: #CCCCCC 0 0 2px inset;
+    padding: 5px 0 5px 5px;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+    .tl-comment-reply textarea:focus {
+        border: 1px solid #66AFE9;
+        box-shadow: #66AFE9 0 0 7px,#CCCCCC 0 0 2px inset;
+    }
+
+.tl-comment-reply input[type=button] {
+    width: 15%;
+    margin: 0;
+    display: inline;
+    line-height: 17px;
+    vertical-align: top;
+    border: 1px solid #CCCCCC;
+    border-left: none;
+    padding: 4px;
+}
+
+    .tl-comment-reply input[type=button]:hover {
+        background-color: #E6E6E6;
+    }
+
+    .tl-comment-reply input[type=button]:focus {
+        background-color: #E6E6E6;
+    }

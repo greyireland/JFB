@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="foot.css" rel="stylesheet" />
+    <link href="Css/Css_Ordinary.css" rel="stylesheet" />
+    <link href="Css/Css_Master.css" rel="stylesheet" />
+    <script src="Js/jquery-1.10.2.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script>
+        var tabUpMarginTop_new = "-10px";
+        var tabUpMarginTop_old = "0px";
+        var tabDownHeight_new = "13.5%";
+        var tabDownHeight_old = "5%";
+        var animSpeed = "fast";
+        $(window).ready(function () {
+            $("#s_box img").mouseenter(function () {
+                $(this).prop({ "src": "img/clock_act.PNG" })
+            });
+            $("#s_box img").mouseout(function () {
+                $(this).prop({ "src": "img/clock.PNG" })
+            });
+            $("#s_box img").click(function () {
+                $("form").submit();
+            });
+            $("#s_box input").keypress(function (event) {
+                if (event.keyCode == 13) {
+                    $("form").submit();
+                }
+            });
+            $("#tabs > div").mouseenter(function () {
+                //$($(this).children(".tab_up")[0]).css({ "marginTop": "-10px" });
+                //$($(this).children(".tab_down")[0]).css({ "height": "14%" });
+                $($(this).children(".tab_up")[0]).animate({ "marginTop": tabUpMarginTop_new }, animSpeed);
+                $($(this).children(".tab_down")[0]).animate({ "height": tabDownHeight_new }, animSpeed);
+            });
+            $("#tabs > div").mouseleave(function () {
+                //$($(this).children(".tab_up")[0]).css({ "marginTop": "0px" });
+                //$($(this).children(".tab_down")[0]).css({ "height": "5%" });
+                $($(this).children(".tab_up")[0]).animate({ "marginTop": tabUpMarginTop_old }, animSpeed);
+                $($(this).children(".tab_down")[0]).animate({ "height": tabDownHeight_old }, animSpeed);
+            });
+            $(".tab_up").click(function () {
+                if (typeof ($(this).attr("url")) != "undefined")
+                    jumpUrl($(this).attr("url"), "_self");
+            });
+        });
+        function jumpUrl(url, target) {
+            window.open(url, target);
+        }
+    </script>
+</head>
+<body class="min-wth body-color">
+    <div id="d_body">
+        <%--<form id="form" runat="server">--%>
+        <input id="reset" type="reset" style="display: none;" onclick="alert('asas');" />
+        <div id="up">
+            <div id="header">
+                <div id="ls">
+                    <div id="logo">
+                        <img src="img/Logo.PNG" />
+                    </div>
+                    <div id="search">
+                        <div id="s_box">
+                            <input placeholder="Search for somthing here" type="search" />
+                            <img src="img/clock.PNG" />
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs">
+                    <div class="tabs">
+                        <div class="tab_up" url="Default.aspx">
+                            <img src="img/Shape_2.PNG" />
+                            <span>首页</span>
+                        </div>
+                        <div class="tab_down"></div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tab_up" url="SelfInformation.aspx">
+                            <img src="img/icon1.PNG" />
+                            <span>个人服务</span>
+                        </div>
+                        <div class="tab_down"></div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tab_up" url="Trade.aspx">
+                            <img src="img/icon2.PNG" />
+                            <span>积分交易</span>
+                        </div>
+                        <div class="tab_down"></div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tab_up" url="Buy.aspx">
+                            <img src="img/icon3.PNG" />
+                            <span>积分购买</span>
+                        </div>
+                        <div class="tab_down"></div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tab_up" url="Credit.aspx">
+                            <img src="img/Shape_2.PNG" />
+                            <span>积分借贷</span>
+                        </div>
+                        <div class="tab_down"></div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tab_up">
+                            <img src="img/icon2.PNG" />
+                            <span>关于我们</span>
+                        </div>
+                        <div class="tab_down"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%--</form>--%>
+        <div>
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-940">
+            <div class="footer-self-info">
+                <p class="p" style="line-height:22px;text-indent:2em;font-family:'Microsoft YaHei','微软雅黑';">
+                    我们致力于为您提供最优质的积分交易服务，无论您是在家中还是在路上，随时随地都可以通过积分宝平台交换您的积分，
+                    虽然只是简单的积分交易，但是我们仍不会懈怠，感谢您支持我们平台的发展！
+                </p>
+            </div>
+            <div class="footer-right fn-clear">
+                <ul class="ui-link fn-clear">
+                    <li class="ui-link-item"><a href="" target="_blank" title="关于积分宝">关于积分宝</a></li>
+                    <li class="ui-link-item"><a href="" target="_blank" title="官方博客">官方博客</a></li>
+                    <li class="ui-link-item"><a href="" target="_blank" title="诚征英才">诚征英才</a></li>
+                    <li class="ui-link-item"><a href="" target="_blank" title="开放平台">开放平台</a></li>
+                    <li class="ui-link-item"><a href="" target="_blank" title="联系我们">联系我们</a></li>
+                    <li class="ui-link-item ui-link-item-last"><a href="" target="_blank" title="网站地图">网站地图</a></li>
+                </ul>
+                <ul class="ui-link fn-clear">
+                    <li class="ui-link-item"><a href="" target="_blank" title="International Business">International Business</a></li>
+                    <li class="ui-link-item ui-link-item-last"><a href="" target="_blank" title="About Alipay">About JiFB</a></li>
+                </ul>
+                <ul class="ui-link fn-clear">
+                    <li class="ui-link-item ui-link-item-last">积分宝版权所有 2014 <a href="" target="_blank">ICP证: Xxx-xxxxxxxx</a></li>
+
+                </ul>
+                <ul class="ui-link fn-clear">
+                    <li class="ui-link-item ui-link-item-icon ui-link-item-icon-twitter"><a href="" target="_blank" title="Twitter">Twitter</a></li>
+                    <li class="ui-link-item ui-link-item-icon ui-link-item-icon-facebook"><a href="" target="_blank" title="Facebook">Facebook</a></li>
+                    <li class="ui-link-item ui-link-item-icon ui-link-item-icon-rss"><a href="" target="_blank" title="RSS">RSS</a></li>
+                    <li class="ui-link-item ui-link-item-icon ui-link-item-icon-mail"><a href="" target="_blank" title="Mail">Mail</a></li>
+                </ul>
+            </div>
+            <div class="clearboth"></div>
+        </div>
+        <div class="clearboth"></div>
+    </footer>
+
+</body>
+</html>

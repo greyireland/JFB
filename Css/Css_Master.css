@@ -1,0 +1,324 @@
+﻿body {
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+.clearboth {
+    clear: both;
+}
+
+#d_body {
+    background-color: #ebebeb;
+    position: relative;
+    z-index: 999;
+    -moz-box-shadow: 0px 3px 3px #808080;
+    -webkit-box-shadow: 0px 3px 3px #808080;
+    box-shadow: 0px 3px 3px #302f2f;
+    min-height: 100%;
+}
+
+#up {
+    width: 100%;
+    height: 220px;
+    
+}
+
+#header {
+    position: relative;
+    width: 70%;
+    height: 110%;
+    margin: 20px auto;
+    z-index:10;
+}
+
+#ls {
+    width: 100%;
+    height: 40%;
+}
+
+#logo {
+    width: 30%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    vertical-align: central;
+}
+
+    #logo img {
+        margin-top: 8%;
+        float: none;
+    }
+
+#search {
+    width: 70%;
+    height: 100px;
+    float: left;
+}
+
+/*#search input[type='search'] {
+        height: 40px;
+        border: none;
+        width: 270px;
+        margin-top:4%;
+        float:right;
+        -moz-box-shadow: 0px 0px 3px #808080;
+        -webkit-box-shadow: 0px 0px 3px #808080;
+        box-shadow: 0px 0px 3px #808080;
+        background-image:url("/img/clock.png");
+        background-repeat:no-repeat;
+    }*/
+
+#s_box {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 40px;
+    overflow: hidden;
+    width: 270px;
+    margin-top: 4%;
+    float: right;
+    -moz-box-shadow: 0px 0px 3px #808080;
+    -webkit-box-shadow: 0px 0px 3px #808080;
+    box-shadow: 0px 0px 3px #808080;
+}
+
+    #s_box input {
+        width: 230px;
+        height: 40px;
+        float: left;
+        border: none;
+        background: none;
+        border-radius: 0;
+    }
+
+        #s_box input:focus, .ui-input-focus {
+            outline-style: none;
+        }
+
+    #s_box img {
+        display: inline;
+        float: right;
+        margin: 8px 7px;
+    }
+
+#tabs {
+    height: 65%;
+    width: 100%;
+}
+
+.tabs {
+    text-align: center;
+    margin-top: 20px;
+    height: 75%;
+    width: 16.6666666666667%;
+    background-color: gray;
+    float: left;
+    position: relative;
+    -moz-box-shadow: 0px 0px 5px #808080;
+    -webkit-box-shadow: 0px 0px 5px #808080;
+    box-shadow: 0px 0px 5px #808080;
+}
+
+.tab_up {
+    height: 95%;
+    width: 100%;
+    background-color: #ffffff;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#e5e5e5));
+    background: -moz-linear-gradient(top,#ffffff,#e5e5e5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5');
+    background: -o-linear-gradient(top,#ffffff,#e5e5e5);
+    background: -ms-linear-gradient(top,#ffffff 0,#e5e5e5 100%);
+    background: linear-gradient(top,#ffffff,#e5e5e5);
+}
+
+.block-gradient {
+    background-color: #ffffff;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#e5e5e5));
+    background: -moz-linear-gradient(top,#ffffff,#e5e5e5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5');
+    background: -o-linear-gradient(top,#ffffff,#e5e5e5);
+    background: -ms-linear-gradient(top,#ffffff 0,#e5e5e5 100%);
+    background: linear-gradient(top,#ffffff,#e5e5e5);
+}
+
+.tab_up img {
+    margin-top: 20%;
+}
+
+.tab_up span {
+    display: block;
+    margin-top: 10px;
+    height: 30%;
+    cursor: pointer;
+    color: #707070;
+}
+
+.tab_down {
+    height: 5%;
+    width: 100%;
+    background-color: #701dbb;
+}
+
+footer {
+    text-align: left;
+    color: #FFF;
+    font-size: 12px;
+    width: 100%;
+    height: 320px;
+    line-height: 10px;
+    clear: both;
+    background: #444;
+    position: absolute;
+    z-index: -20;
+    min-width: 1300px;
+}
+
+    footer a {
+        color: #FFF;
+    }
+
+    footer .footer-940 {
+        width: 932px;
+        margin: 0 auto;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        height: 300px;
+        z-index: -15;
+    }
+
+        footer .footer-940 .footer-self-info {
+            line-height: 1.6em;
+            padding: 0 0 0 58px;
+            background: url("../img/Logo_foot.png") no-repeat;
+            float: left;
+            width: 400px;
+            height: auto;
+        }
+
+        footer .footer-940 .footer-general-info a {
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+.p {
+    line-height: 1.8em;
+    margin: 70px 0 0 0;
+    color: #d9d9d9;
+}
+
+.footer-right {
+    float: right;
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ui-link {
+    display: inline-block;
+    padding: 4px 0;
+    _display: inline;
+}
+
+.fn-clear {
+    zoom: 1;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+
+.fn-clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+
+.ui-link-item {
+    color: #a0a0a0;
+}
+
+.ui-link-item {
+    float: left;
+    padding: 0 8px;
+    border-right: 1px solid #cccccc;
+    line-height: 16px;
+    margin-top: 15px;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+
+.ui-link-item-last {
+    border-right: 0;
+}
+
+.ui-link-item-icon {
+    padding-left: 2px;
+    margin: 20px;
+    border-right: 0;
+}
+
+.ui-link-item-icon-rss {
+    list-style: url(/img/RSS.png);
+}
+
+.ui-link-item-icon-facebook {
+    list-style: url(/img/facebook.png);
+}
+
+.ui-link-item-icon-twitter {
+    list-style: url(/img/twitter.png);
+}
+
+.ui-link-item-icon-mail {
+    list-style: url(/img/mail.png);
+}

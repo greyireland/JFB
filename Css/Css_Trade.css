@@ -1,0 +1,217 @@
+﻿body {
+}
+
+.trade-box {
+    width: 70%;
+    height: auto;
+    margin: 30px auto;
+}
+
+    .trade-box .box {
+        height: 50px;
+        border: 1px solid #e1e1e1;
+        background-color: #fff;
+        margin: 20px auto;
+    }
+
+section:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.intro {
+    float: left;
+    width: 420px;
+}
+
+    .intro > select {
+        display: inline-block;
+        width: 170px;
+        cursor: pointer;
+        height: 36px;
+        border: 1px solid #5a9aa8;
+        position: relative;
+        margin: 7px 30px 7px 10px;
+        outline-style: none;
+        padding-left: 30px;
+        color: #004d60;
+        transition: background-color ease-in-out .15s,color ease-in-out .15s;
+    }
+        .intro > select:hover,.intro > select:focus {
+            background-color: #5a9aa8;
+            color: #FFF;
+        }
+
+.box .trade-val {
+    width: 170px;
+    height: 34px;
+    display: inline-block;
+    position: relative;
+    margin: 7px 15px 7px 10px;
+    text-align: center;
+    color: #004d60;
+    border: 1px solid #5a9aa8;
+    float: left;
+    padding: 0;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+    .box .trade-val:focus {
+        outline-style: none;
+        box-shadow: #5a9aa8 0 0 5px;
+    }
+
+.box span {
+    width: 170px;
+    padding: 12px 0;
+    display: inline-block;
+    background-color: #e0e0e0;
+    position: relative;
+    margin: 7px 15px 7px 22px;
+    text-align: center;
+    color: #999f82;
+    border: none;
+    float: left;
+    vertical-align: middle;
+}
+
+.down-arrow {
+    height: 36px;
+    width: 40px;
+    background-color: #5a9aa8;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+    .down-arrow:hover {
+        background-color: #004d60;
+    }
+
+    .down-arrow img {
+        height: 7px;
+    }
+
+.trade-tool {
+}
+
+    .trade-tool .box-tip {
+        display: inline-block;
+        background-color: #5a9aa8;
+        width: 170px;
+        cursor: pointer;
+        line-height: 36px;
+        position: relative;
+        margin: 7px 30px 7px 10px;
+        text-align: center;
+        color: #dedede;
+        border: none;
+        float: left;
+    }
+
+
+/*.trade-tool .block {
+        height: 36px;
+        width: 40px;
+        background-color: #;
+        float: right;
+        text-align: center;
+        vertical-align: middle;
+    }*/
+.d-add-trade {
+    width: 70%;
+    height: 50px;
+    margin: 30px auto;
+    background-color: #FFF;
+    border: 1px solid #e1e1e1;
+}
+
+    .d-add-trade:hover {
+        background-color: #e0e0e0;
+        border: 1px solid #FFF;
+    }
+
+        .d-add-trade:hover .d-add-trade-img {
+            background-position: 35px 0;
+        }
+
+.d-add-trade-img {
+    background-image: url(/img/add-btn.png);
+    background-position: 0 0;
+    background-size: 70px;
+    width: 35px;
+    height: 35px;
+    margin: 7.5px auto;
+}
+
+.d-operate-trade {
+    width: 70%;
+    height: 50px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+    .d-operate-trade > div {
+        display: inline-block;
+        margin: 0px 70px;
+        width: 30%;
+        background-color: #FFF;
+        border: 1px solid #e1e1e1;
+        text-align: center;
+        line-height: 40px;
+    }
+
+        .d-operate-trade > div:hover {
+            background-color: #e1e1e1;
+            border-color: #FFF;
+        }
+
+            .d-operate-trade > div:hover .btn-submit {
+                background-position: 30px 0;
+            }
+
+            .d-operate-trade > div:hover .btn-reset {
+                background-position: 30px 26px;
+            }
+
+    .d-operate-trade .btn-submit {
+        background-image: url(/img/operate-btn.png);
+        background-size: 60px;
+        background-position: 0 0;
+        height: 28px;
+        width: 30px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .d-operate-trade .btn-reset {
+        background-image: url(/img/operate-btn.png);
+        background-size: 60px;
+        background-position: 0px 26px;
+        height: 26px;
+        width: 30px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+.btn-del-ico {
+    background-image: url(/img/del-btn.png);
+    background-size: 30px;
+    background-position: 0 0;
+    height: 15px;
+    width: 15px;
+}
+
+    .btn-del-ico:hover {
+        background-position: 15px 0;
+    }
+
+.btn-del {
+    float: right;
+    display: block;
+    margin: 18px 20px;
+}

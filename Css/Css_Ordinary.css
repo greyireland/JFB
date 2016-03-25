@@ -1,0 +1,13 @@
+﻿body {
+    margin:0;
+    padding:0;
+    min-width:1300px;
+}
+.body-color {
+    background-color: #ebebeb;
+}
+
+div,span{
+    display:block;
+}
+

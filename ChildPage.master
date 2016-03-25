@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ChildPage.master.cs" Inherits="ChildPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+    <script src="Js/jquery-1.10.2.min.js"></script>
+    <link href="Css/Css_Master.css" rel="stylesheet" />
+    <link href="Css/Css_Ordinary.css" rel="stylesheet" />
+    <link href="Css/CSS_Register.css" rel="stylesheet" />
+    <link href="Css/Css_ChildMaster.css" rel="stylesheet" />
+    <link href="Css/Css_I_Tabs.css" rel="stylesheet" />
+    <script src="Js/sco.valid.js"></script>
+    <script>
+        var toolbar_index = 0;
+        function current_tool(i) {
+            var e = $($(".toolbar").children("a")[i - 1]);
+            e.addClass("tool-focus");
+        }
+        $(window).ready(function () {
+            var element;
+            current_tool(toolbar_index);
+            $(".toolbar > a").mouseenter(function () {
+                if ($(this).hasClass("tool-focus"))
+                    element = $(this);
+                else
+                    $(this).addClass("tool-focus");
+            });
+            $(".toolbar > a").mouseleave(function () {
+                $(this).removeClass("tool-focus");
+                element.addClass("tool-focus");
+                current_tool(toolbar_index);
+            });
+        })
+    </script>
+    <script>
+        var index = 0;
+        function current_tab(i) {
+            var e = $($(".i-tabs").children("a")[i - 1]);
+            e.addClass("a-curr");
+            e.append("<div class='i-cover'><div>");
+        }
+        function Logout() {
+            $.post(window.location, { logout: true }, function (data) {
+                window.location = data;
+            })
+        }
+        $(window).ready(function () {
+            //$(".i-tabs > a").mouseenter(function () {
+            //    $(this).append("<img src='/img/arrows.png' class='arrows'/>");
+            //});
+            current_tab(index);
+            $(".i-tabs > a").mouseenter(function () {
+                $(this).addClass("a-hover");
+                //$(this).append("<div class='i-cover'><div>");
+            });
+            $(".i-tabs > a").mouseleave(function () {
+                $(this).removeClass("a-hover");
+                //$(this).children(".i-cover").remove();
+                current_tab(index);
+            });
+            $(".i-tabs a:first-child").addClass("i-tab-top");
+            $(".i-tabs a:last-child").addClass("i-tab-btm");
+            $(".i-content").css({ "minHeight": $(".i-tabs").height() - 50 + "px" });
+        })
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="body-color" style="background-image: url(/img/未标题-1.png);">
+    <div class="head">
+        <div class="logo"></div>
+        <div class="toolbar">
+            <a href="Default.aspx" class="tools">首页</a>
+            <a href="SelfInformation.aspx" class="tools">个人服务</a>
+            <a href="Trade.aspx" class="tools">积分交易</a>
+            <a href="Buy.aspx" class="tools">积分购买</a>
+            <a href="Credit.aspx" class="tools">积分借贷</a>
+            <a class="tools">关于我们</a>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="reg-head high-head b_top-bar">
+
+        <img class="img-head" src="headimg.ashx" /><!--图片-->
+        <div class="b_uinfo" style="color: #ffffff;">
+            <span style="display: block; margin: 40px 20px 0 30px; font-size: 11pt;">您好! <%=uname %> <span style="font-size: 9pt; display: inline; padding: 0 30px;">尽情享受属于你自己的时间吧<a id="logout" onclick="Logout()" href="javascript:void(0)" style="display: inline; margin: 0 40px;cursor:pointer;color:inherit;">退出</a></span></span>
+            <hr />
+            <span style="display: inline; margin-right: 10px;">上次登录时间: <%=DateTime.Now.AddHours(-0.5) %></span>
+            <span style="border-left: 1px solid #ffffff; padding-left: 10px; display: inline;">安全等级: <%="中等"%></span>
+        </div>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="Content" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer class="reg-footer">
+        <ul class="ui-link fn-clear">
+            <li class="ui-link-item reg-foot-item"><a href="" target="_blank" title="关于积分宝">关于积分宝</a></li>
+            <li class="ui-link-item reg-foot-item"><a href="" target="_blank" title="官方博客">官方博客</a></li>
+            <li class="ui-link-item reg-foot-item"><a href="" target="_blank" title="诚征英才">诚征英才</a></li>
+            <li class="ui-link-item reg-foot-item"><a href="" target="_blank" title="开放平台">开放平台</a></li>
+            <li class="ui-link-item reg-foot-item"><a href="" target="_blank" title="联系我们">联系我们</a></li>
+            <li class="ui-link-item reg-foot-item ui-link-item-last"><a href="" target="_blank" title="网站地图">网站地图</a></li>
+        </ul>
+        <br />
+        <ul class="ui-link fn-clear">
+            <li class="ui-link-item reg-foot-item ui-link-item-last">积分宝版权所有 2014 <a style="display: inline" href="" target="_blank">ICP证: Xxx-xxxxxxxx</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

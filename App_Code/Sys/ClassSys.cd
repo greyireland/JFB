@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CPorter">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAgAQAAAAAQAABAAAAAAAQQAAAAEA=</HashCode>
+      <FileName>App_Code\Sys\CPorter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPurchaseCredits">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAAAAAAAAAAAAAAAAAAAAAAAABAABAAAAAAAA=</HashCode>
+      <FileName>App_Code\Sys\CPurchaseCredits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDebitCredits">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAEEAAAABBAABAAAAAAAA=</HashCode>
+      <FileName>App_Code\Sys\CDebitCredits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CTradeCredits">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAgAAAAAAgAAAAIIABAAAAAAAIAA=</HashCode>
+      <FileName>App_Code\Sys\CTradeCredits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COverdraftCredits">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAABAACEAAAAAAA=</HashCode>
+      <FileName>App_Code\Sys\COverdraftCredits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEvaluateManager">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Sys\CEvaluateManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CForumManager">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAgAAA=</HashCode>
+      <FileName>App_Code\Sys\CForumManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMsg">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Sys\CMsg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CJsonHelper">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Sys\CJsonHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSelfInfoManager">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAIAAAABAAAAAEAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>App_Code\Sys\CSelfInfoManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

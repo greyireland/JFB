@@ -1,0 +1,223 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-size: 9pt;
+    min-width: 1300px;
+}
+h3 {
+    display: block;
+    width: 80px;
+    background-color: #ebebeb;
+}
+
+#d_register {
+    display: block;
+    float: none;
+    width: 70%;
+    margin: 70px auto;
+}
+
+#regTable {
+    float: left;
+}
+
+    #regTable tr td {
+        padding: 10px;
+        height: 30px;
+        font-size: 11pt;
+    }
+
+        #regTable tr td input {
+            font-size: 15pt;
+            background-image: none;
+            border: none;
+            padding: 5px 9px;
+            width: 200px;
+            -moz-box-shadow: 0px 0px 3px #808080 inset;
+            -webkit-box-shadow: 0px 0px 3px #808080 inset;
+            box-shadow: 0px 0px 3px #4a6782 inset;
+        }
+
+            #regTable tr td input:focus {
+                outline-style: none;
+            }
+
+#d_headimg {
+    float: right;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    margin: 0px 100px 0 0;
+}
+
+    #d_headimg img {
+        width: 100px;
+        height: 100px;
+    }
+
+input[type="file"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.btn_Upload {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+    width: 75px;
+}
+
+.form-line {
+    vertical-align: middle;
+    float: none;
+    height: 50px;
+    width: 500px;
+    margin-left: 100px;
+}
+
+.label {
+    display: block;
+    float: left;
+    font-size: 11pt;
+    margin: 12px;
+    width: 130px;
+    text-align: right;
+}
+
+.text {
+    font-size: 15pt;
+    background-image: none;
+    border: none;
+    padding: 5px 9px;
+    width: 200px;
+    -moz-box-shadow: 0px 0px 3px #808080 inset;
+    -webkit-box-shadow: 0px 0px 3px #808080 inset;
+    box-shadow: 0px 0px 3px #4a6782 inset;
+}
+
+    .text:focus {
+        outline-style: none;
+    }
+
+.element {
+    float: left;
+}
+
+.reg-item {
+    margin: 20px 0 22px 0;
+    background: url("https://img.tenpay.com/v2/res/tenpay_v2/img/register/sign_repeat_x.png") repeat-x left center;
+}
+
+.reg-head {
+    width: 100%;
+    height: 30px;
+    background-color: #37373b;
+    color: #808080;
+}
+
+    .reg-head .logo {
+        font-size: 120%;
+        float: left;
+        width: 30%;
+        height: 100%;
+        text-align: right;
+    }
+
+    .reg-head .option {
+        float: left;
+        text-align: center;
+        width: 70%;
+    }
+
+    .reg-head ul {
+        padding: 0;
+        margin: 7px;
+        display: block;
+        float: right;
+        width: 40%;
+    }
+
+    .reg-head .list-item {
+        margin: 0;
+    }
+
+        .reg-head .list-item a {
+            display: block;
+            color: #808080;
+            text-decoration: none;
+        }
+
+            .reg-head .list-item a:hover {
+                text-decoration: underline;
+                color: #ebebeb;
+            }
+
+.high-head {
+    height: 100px;
+    background-color: #808080;
+    background-color: #ffffff;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#e5e5e5));
+    background: -moz-linear-gradient(top,#ffffff,#e5e5e5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5');
+    background: -o-linear-gradient(top,#ffffff,#e5e5e5);
+    background: -ms-linear-gradient(top,#ffffff 0,#e5e5e5 100%);
+    background: linear-gradient(top,#ffffff,#e5e5e5);
+    border-bottom: groove;
+}
+
+.title {
+    font-size: 30px;
+    display: block;
+    margin: 20px 0 0 20%;
+    text-shadow: 0px 0px 2px #000000;
+}
+
+.reg-footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: block;
+    padding-top:50px;
+    background-color:initial;
+}
+
+.reg-foot-item {
+    color: #000000;
+    margin:0;
+}
+    .reg-foot-item a {
+        color:#000;
+        text-decoration:none;
+    }
+    .reg-foot-item a:hover {
+        color:#37373b;
+        text-decoration:underline;
+    }

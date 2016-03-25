@@ -1,0 +1,39 @@
+﻿body {
+    margin:0;
+    background-color:#F9F9F9;
+}
+#sub-title {
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    height:100px;
+    width:90%;
+    margin:10px auto;
+}
+#sub-title img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+#sub_content{
+    width:60%;
+    border-radius:7px;
+    background-color:#F2F2F2;
+    margin:20px auto;
+    padding:7px;
+}
+#sub_content > div{
+    border:2px dashed #808080;
+    padding:15px;
+}
+
+#sub_content > div > div {
+    border-radius:7px;
+    background-color:#FFF;
+    padding:7px;
+}
+#sub_content > div > div > div{
+    border:2px dashed #808080;
+    padding:5px;
+}
