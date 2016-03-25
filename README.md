@@ -9,3 +9,6 @@ https://github.com/shawnwg/JFB
 > Lamda
 > Linq
 > EasyUI&Masonry.js&Goup.js等
+演示地址：jfb.apphb.com
+用户：noname
+密码：jfb123456
